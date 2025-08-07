@@ -1,0 +1,30 @@
+generator client {
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "rhel-openssl-1.0.x"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Movie {
+  id         Int      @id @default(autoincrement())
+  Title      String
+  Year       String
+  imdbID     String   @unique
+  Type       String
+  Poster     String?  @default("N/A")
+  Plot       String?  @db.Text
+  Director   String?
+  Actors     String?  @db.Text
+  Genre      String?
+  Runtime    String?
+  TrailerURL String?
+}
+
+model User {
+  id       Int    @id @default(autoincrement())
+  username String @unique
+  password String
+}

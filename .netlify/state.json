@@ -1,0 +1,20 @@
+{
+	"geolocation": {
+		"data": {
+			"city": "Yogyakarta",
+			"country": {
+				"code": "ID",
+				"name": "Indonesia"
+			},
+			"subdivision": {
+				"code": "YO",
+				"name": "Yogyakarta"
+			},
+			"timezone": "Asia/Jakarta",
+			"latitude": -7.7903,
+			"longitude": 110.3688,
+			"postalCode": "55271"
+		},
+		"timestamp": 1754556502950
+	}
+}
